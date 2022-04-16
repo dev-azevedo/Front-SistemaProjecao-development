@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <Nav />
-    <div id="body" class="bg-secondary p-3">
-      <router-view />
+    <div id="body" class="bg-secondary p-2">
+      <keepAlive>
+        <Transition name="fade">
+          <router-view />
+        </Transition>
+      </keepAlive>
     </div>
   </div>
 </template>
@@ -18,14 +22,21 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 #body {
   height: 90vh;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: transform 0.3s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  transform: scale(0);
+}
+.fade-leave,
+.fade-enter-to {
+  transform: scale(0);
 }
 </style>

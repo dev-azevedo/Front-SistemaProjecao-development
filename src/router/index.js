@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 // components
 import Abstract from "./../components/abstract.vue"
-import Register from "./../components/register/register.vue"
+import Register from "./../views/register.vue"
 import Contract from "./../components/contract/contract.vue"
 import Income from "./../components/income/income.vue"
 
