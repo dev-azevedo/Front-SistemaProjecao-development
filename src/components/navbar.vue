@@ -5,6 +5,7 @@
       type="dark"
       variant="light"
       class="p-4 border-bottom border-success"
+      id="navBar"
     >
       <b-navbar-brand><span class="text-dark">Logo TJ</span></b-navbar-brand>
       <div class="w-100 d-flex justify-content-between">
@@ -50,4 +51,7 @@ export default {};
 
 
 <style>
+#navBar {
+  height: 80px !important;
+}
 </style>

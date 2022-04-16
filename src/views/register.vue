@@ -44,10 +44,14 @@
               <p>{{ list.telefoneContato }}</p>
             </td>
             <td>
-              <button class="btn btn-warning">Editar</button>
+              <button class="btn btn-warning btn-sm">
+                <b-icon-pencil-square></b-icon-pencil-square>
+              </button>
             </td>
             <td>
-              <button class="btn btn-danger">Deletar</button>
+              <button class="btn btn-danger btn-sm">
+                <b-icon-trash-fill></b-icon-trash-fill>
+              </button>
             </td>
           </tr>
         </tbody>
@@ -59,6 +63,7 @@
 </template>
 <script>
 import ModalForm from "./../components/ModalForm.vue";
+
 export default {
   components: {
     ModalForm,

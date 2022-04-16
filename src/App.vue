@@ -13,6 +13,7 @@
 
 <script>
 import Nav from "./components/navbar.vue";
+
 export default {
   name: "App",
   components: {
@@ -23,7 +24,7 @@ export default {
 
 <style>
 #body {
-  height: 90vh;
+  height: calc(100vh - 80px);
 }
 
 .fade-enter-active,

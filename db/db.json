@@ -1,0 +1,16 @@
+{
+    "user": {
+        "id": 1,
+        "nome": "Jhonatan Azevedo",
+        "nomeFantasia": "",
+        "cpfCnpj": "12345678909",
+        "tipoCliente": "MAW",
+        "contatos": [
+            {
+                "nome": "Jhow",
+                "email": "jhow.dev@gmail.com",
+                "telefone": "41988776655"
+            }
+        ]
+    }
+}

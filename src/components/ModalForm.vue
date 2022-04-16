@@ -197,7 +197,7 @@ export default {
           icon: "error",
           title: "Oops...",
           text: "Preencha todos os campos de contato",
-          showConfirmButton: true,
+          showConfirmButton: false,
           confirmButtonColor: "#28a745",
           timer: 2500,
         });
@@ -211,6 +211,8 @@ export default {
       parent.remove();
       this.dataNewRegister.contatoAdicionados.splice(id, 0);
     },
+
+    Save() {},
   },
 };
 </script>
